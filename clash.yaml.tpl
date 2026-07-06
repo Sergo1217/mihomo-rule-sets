@@ -208,8 +208,8 @@ rule-providers:
     type: http
     behavior: domain
     format: mrs
-    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/ru-bundle/rule.mrs
-    path: ./ru-bundle/rule.mrs
+    url: https://github.com/sergo1217/mihomo-rule-sets/raw/main/rule-set.mrs
+    path: ./sergo-bundle/rule.mrs
     interval: 86400
 
 rules:
@@ -221,6 +221,7 @@ rules:
   - RULE-SET,youtube,▶️ YouTube
   - OR,((RULE-SET,discord_domains),(RULE-SET,discord_voiceips),(PROCESS-NAME,Discord.exe)),💬 Discord
   - RULE-SET,ru-bundle,🌍 VPN
+  - RULE-SET,sergo-bundle,🌍 VPN
   - RULE-SET,refilter_domains,🌍 VPN
   - RULE-SET,refilter_ipsum,🌍 VPN
   - MATCH,DIRECT
