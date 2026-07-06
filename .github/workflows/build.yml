@@ -25,7 +25,7 @@ jobs:
 
       - name: Convert YAML -> MRS
         run: |
-          ./mihomo convert-ruleset domain yaml rule-set.yaml rule.mrs
+          ./mihomo convert-ruleset domain text rule.lst rule.mrs
 
       - name: Commit & Push
         run: |
