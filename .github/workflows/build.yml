@@ -23,7 +23,7 @@ jobs:
           gunzip mihomo.gz
           chmod +x mihomo
 
-      - name: Convert YAML -> MRS
+      - name: Convert LST -> MRS
         run: |
           ./mihomo convert-ruleset domain text rule.lst rule.mrs
 
