@@ -3,7 +3,7 @@ name: Build Mihomo RuleSet
 on:
   push:
     paths:
-      - "rule-set.yaml"
+      - "rule.lst"
 
 permissions:
   contents: write
