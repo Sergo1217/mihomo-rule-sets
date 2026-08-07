@@ -3,7 +3,7 @@ name: Build Mihomo RuleSet
 on:
   push:
     paths:
-      - "rule.lst"
+      - "rules.lst"
 
 permissions:
   contents: write
@@ -25,14 +25,14 @@ jobs:
 
       - name: Convert LST -> MRS
         run: |
-          ./mihomo convert-ruleset domain text rule.lst rule.mrs
+          ./mihomo convert-ruleset domain text rules.lst rules.mrs
 
       - name: Commit & Push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add rule.mrs
+          git add rules.mrs
 
-          git diff --cached --quiet || git commit -m "auto: update rule.mrs"
+          git diff --cached --quiet || git commit -m "auto: update rules.mrs"
           git push
