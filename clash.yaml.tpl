@@ -208,8 +208,8 @@ rule-providers:
     type: http
     behavior: domain
     format: mrs
-    url: https://github.com/sergo1217/mihomo-rule-sets/raw/main/rule.mrs
-    path: ./sergo-bundle/rule.mrs
+    url: https://github.com/Sergo1217/mihomo-rule-sets/raw/main/rules.mrs
+    path: ./sergo-bundle/rules.mrs
     interval: 86400
 
 rules:
