@@ -53,7 +53,7 @@ dns:
 proxy-providers:
   sub:
     type: http
-    url: https://103.112.69.254.cdn-one.org/few79qX5T1/${SUB_ID}?provider=1
+    url: https://panel.sergo1217.party/bC4OkOxZfe/${SUB_ID}?provider=1
     path: ./proxy_providers/base64.yml
     interval: 3600
     health-check:
